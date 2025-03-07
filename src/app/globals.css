@@ -1,2 +1,57 @@
 @import 'tailwindcss';
 @import '@fontsource/roboto-mono';
+
+/* Utilites used across the project */
+@layer utilities {
+  /* The Grid used for the background style */
+  .bg-grid {
+    background-image:
+      linear-gradient(to right, rgba(50, 50, 50, 0.05) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(50, 50, 50, 0.05) 1px, transparent 1px);
+    background-size: 20px 20px;
+    background-attachment: fixed;
+  }
+}
+
+/* Styles for the components of the project */
+@layer components {
+  /* The Layout Background */
+  .gradient-background {
+    @apply bg-gradient-to-br from-blue-100 via-gray-100 to-orange-100;
+  }
+
+  /* Flex container class */
+  .flex-center {
+    @apply flex items-center justify-center;
+  }
+
+  /* Background style */
+  .bg-glass {
+    @apply bg-white/30 backdrop-blur-lg rounded-lg;
+  }
+
+  /* Text style */
+  .text-heavy {
+    @apply font-bold text-[1.5vw];
+  }
+
+  /* Container for Header/Footer */
+  .container-wide {
+    @apply w-[100] h-[4vw] gap-5 flex;
+  }
+
+  /* Action Menu styles */
+  .action-menu {
+    @apply flex-5;
+  }
+
+  /* Export Menu styles */
+  .export-menu {
+    @apply flex-5;
+  }
+
+  /* Logo styles */
+  .logo {
+    @apply flex-1;
+  }
+}

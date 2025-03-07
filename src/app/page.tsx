@@ -1,9 +1,28 @@
+import Header from './components/Header';
+import Logo from './components/Logo';
+import ActionMenu from './components/ActionMenu';
+import NotesGrid from './components/NotesGrid';
+import Footer from './components/Footer';
+import ExportMenu from './components/ExportMenu';
+
 export default function Home() {
   return (
-    <main className="min-h-screen bg-gray-100">
-      <h1 className="text-4xl font-bold text-center pt-10">
-        Welcome to Paperboard
-      </h1>
+    <main
+      className="
+        min-h-screen 
+        p-5
+        flex
+        flex-col
+        bg-grid"
+    >
+      <Header className="flex-1">
+        <Logo />
+        <ActionMenu />
+      </Header>
+      <NotesGrid className="flex-20" />
+      <Footer className="flex-1">
+        <ExportMenu />
+      </Footer>
     </main>
   );
 }

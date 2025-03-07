@@ -13,7 +13,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="font-['Roboto_Mono']">{children}</body>
+      <body className="font-['Roboto_Mono'] gradient-background">
+        {children}
+      </body>
     </html>
   );
 }
