@@ -47,7 +47,7 @@
 
   /* Container for Header/Footer */
   .container-wide {
-    @apply w-[100] h-[4vw] gap-5 flex;
+    @apply w-[100%] h-[4vw] gap-5 flex;
   }
 
   /* Action Menu styles */
