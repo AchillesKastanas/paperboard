@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import React from 'react';
 import Note from './Note';
 import { useNotes } from '../store/NotesContext';
 

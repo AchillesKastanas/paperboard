@@ -1,6 +1,8 @@
 'use client';
+
 import React, { useState, useEffect, useCallback } from 'react';
 import { useNotes } from '../store/NotesContext';
+import { motion } from 'framer-motion';
 
 interface INoteProps {
   noteId: number;
@@ -8,6 +10,16 @@ interface INoteProps {
   initialContent: string;
   handleButtonClick: (event: React.MouseEvent<HTMLDivElement>) => void;
 }
+
+/* 
+  Framer Motion animation data
+*/
+const noteAnimationVariants = {
+  initial: { opacity: 0, scale: 0.8 },
+  animate: { opacity: 1, scale: 1 },
+  transition: { duration: 0.25 },
+  hover: { rotate: -2 },
+};
 
 const Note = ({
   noteId,
@@ -50,7 +62,13 @@ const Note = ({
   };
 
   return (
-    <div className={`bg-glass p-5 shadow-md flex flex-col`}>
+    <motion.div
+      className="bg-glass p-5 shadow-md flex flex-col"
+      initial={noteAnimationVariants.initial}
+      animate={noteAnimationVariants.animate}
+      transition={noteAnimationVariants.transition}
+      whileHover={noteAnimationVariants.hover}
+    >
       {/* Title */}
       {isEditingTitle ? (
         <input
@@ -100,7 +118,7 @@ const Note = ({
           className="w-8 h-8 mr-2 ml-5"
         />
       </div>
-    </div>
+    </motion.div>
   );
 };
 
