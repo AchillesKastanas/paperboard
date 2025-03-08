@@ -90,10 +90,15 @@ const Note = ({
 
       {/* Delete Button */}
       <div
-        className="bg-glass text-med flex items-center justify-center flex-1"
+        className="bg-glass text-med flex items-center justify-center flex-1 cursor-pointer"
         onClick={handleButtonClick}
       >
         Delete Note
+        <img
+          src="/icons/delete.png"
+          alt="Logo Icon"
+          className="w-8 h-8 mr-2 ml-5"
+        />
       </div>
     </div>
   );
