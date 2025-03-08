@@ -35,6 +35,16 @@
     @apply font-bold text-[1.5vw];
   }
 
+  /* Text style */
+  .text-med {
+    @apply font-bold text-[1.2vw];
+  }
+
+  /* Text style */
+  .text-small {
+    @apply text-[1.2vw];
+  }
+
   /* Container for Header/Footer */
   .container-wide {
     @apply w-[100] h-[4vw] gap-5 flex;
@@ -52,6 +62,6 @@
 
   /* Logo styles */
   .logo {
-    @apply flex-1;
+    @apply flex-1 text-transparent;
   }
 }
