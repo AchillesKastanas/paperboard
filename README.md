@@ -3,8 +3,10 @@
 ## Overview
 
 **Paperboard** is a simple and responsive single-page application (SPA) built using **Next.js** and **TypeScript**. The app allows users to create, delete, edit titles, and manage their notes in a grid layout. Additionally, users can export their notes as a JSON file.
+![image](https://github.com/user-attachments/assets/ed51d74f-8394-467a-8634-6516e60b0715)
 
 ### Features:
+![image](https://github.com/user-attachments/assets/6ee80aa3-1d29-448a-8d27-50f69e342810)
 - **Create, Edit, Delete, and Export Notes**: Manage your notes easily.
 - **Responsive Design**: The app is fully responsive, adapting to various screen sizes.
 - **Animations**: Notes are animated with **Framer Motion** for a smooth user experience.
